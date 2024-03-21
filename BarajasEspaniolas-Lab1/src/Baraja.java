@@ -65,6 +65,35 @@ public class Baraja {
            }
            
            
+//            public void darCartas(int numCartas){
+//                if(numCartas<= cartas.size()){
+//                    for(int i=0 ; i<numCartas; i++){
+//                    siguienteCarta(); 
+//                    }
+//                    System.out.println("se entregaron " + numCartas+ " cartas");
+//                }else{
+//                    System.out.println("no se pueden entregar cartas");
+//                }
+//            }
+            
+           //Otra forma de hacerlo
+            public List<Carta> darCartas(int cantidad) {
+                    List<Carta> cartasRepartidas = new ArrayList<>();
+                    if (cantidad <= cartasDisponibles()) {
+                        for (int i = 0; i < cantidad; i++) {
+                            cartasRepartidas.add(siguienteCarta());
+                        }
+                    } else {
+                        System.out.println("No hay suficientes cartas disponibles para repartir.");
+                    }
+                    return cartasRepartidas;
+                }
+
+            
+                public List<Carta> cartasMonton() {
+                    return cartas;
+                }
+           
         
            //Con este metodo recorremos la lista y mostramos las cartas
             public void mostrarBaraja() {
@@ -73,15 +102,6 @@ public class Baraja {
                 }
             }
             
-            public void darCartas(int numCartas){
-                if(numCartas<= cartas.size()){
-                    for(int i=0 ; i<numCartas; i++){
-                    siguienteCarta(); 
-                    }
-                    System.out.println("se entregaron " + numCartas+ " cartas");
-                }else{
-                    System.out.println("no se pueden entregar cartas");
-                }
-            }
+           
 
 }
