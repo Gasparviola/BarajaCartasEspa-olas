@@ -72,5 +72,16 @@ public class Baraja {
                 System.out.println(carta);
                 }
             }
+            
+            public void darCartas(int numCartas){
+                if(numCartas<= cartas.size()){
+                    for(int i=0 ; i<numCartas; i++){
+                    siguienteCarta(); 
+                    }
+                    System.out.println("se entregaron " + numCartas+ " cartas");
+                }else{
+                    System.out.println("no se pueden entregar cartas");
+                }
+            }
 
 }

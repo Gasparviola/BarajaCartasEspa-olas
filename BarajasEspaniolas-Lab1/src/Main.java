@@ -29,6 +29,9 @@ public class Main {
             System.out.println("Mostramos las cartas disponibles");
             System.out.println("Cantidad de cartas disponibles: " + baraja.cartasDisponibles()); 
             System.out.println("");
+            
+            baraja.darCartas(12);
+            System.out.println("Cantidad de cartas disponibles: " + baraja.cartasDisponibles()); 
            
         
     }
