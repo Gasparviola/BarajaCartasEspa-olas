@@ -40,26 +40,22 @@ public class Baraja {
                 return null;
             }
         }     
-//           public void cartasDisponibles(){
-//               for(Carta carta : cartas){
-//                   System.out.println(carta);
-//               }
-//           }         
+//      public void cartasDisponibles(){
+//          for(Carta carta : cartas){
+//             System.out.println(carta);
+//           }
+//      }         
            //Otra forma de devolver las cartas disponibles
            //Con esto devolvemos en numero cuantas cartas quedan disponibles
         public int cartasDisponibles(){
                return cartas.size();
         }
-           
-           
-        
            //Con este metodo recorremos la lista y mostramos las cartas
         public void mostrarBaraja() {
             for (Carta carta : cartas) {
                 System.out.println(carta);
                 }
-        }
-            
+        }      
         public void darCartas(int numCartas){
                 if(numCartas<= cartas.size()){
                     for(int i=0 ; i<numCartas; i++){
@@ -70,7 +66,7 @@ public class Baraja {
                     System.out.println("no se pueden entregar cartas");
                 }
         }
-      public void cartasMonton() {
+        public void cartasMonton() {
         if (!cartas.isEmpty()) {
             System.out.println("No ha salido ninguna carta aún.");
         } else {
@@ -80,6 +76,4 @@ public class Baraja {
             }
         }
     }
-
-
 }
