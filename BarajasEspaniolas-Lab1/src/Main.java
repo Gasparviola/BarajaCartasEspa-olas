@@ -32,7 +32,7 @@ public class Main {
             
             baraja.darCartas(12);
             System.out.println("Cantidad de cartas disponibles: " + baraja.cartasDisponibles()); 
-           
+            baraja.cartasMonton();
         
     }
     
