@@ -16,7 +16,20 @@ public class Main {
            //Mostramos la baraja
            baraja.mostrarBaraja();
            System.out.println("");
+           
+           
+           //Comprobamos si al barajar  3 cartas(en este caso)  se remueven de la lista
+            System.out.println("Barajamos 3 cartas");
+            baraja.siguienteCarta();
+            baraja.siguienteCarta();
+            baraja.siguienteCarta();
+            System.out.println("");
             
+            //Comprobando lo anteriormente dicho
+            System.out.println("Mostramos las cartas disponibles");
+            System.out.println("Cantidad de cartas disponibles: " + baraja.cartasDisponibles()); 
+            System.out.println("");
+           
         
     }
     

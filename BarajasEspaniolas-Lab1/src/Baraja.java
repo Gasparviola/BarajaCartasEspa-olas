@@ -50,14 +50,27 @@ public class Baraja {
                 return null;
             }
         }
+                 
         
-            //Con este metodo recorremos la lista y mostramos las cartas
+//           public void cartasDisponibles(){
+//               for(Carta carta : cartas){
+//                   System.out.println(carta);
+//               }
+//           }
+           
+           //Otra forma de devolver las cartas disponibles
+           //Con esto devolvemos en numero cuantas cartas quedan disponibles
+           public int cartasDisponibles(){
+               return cartas.size();
+           }
+           
+           
+        
+           //Con este metodo recorremos la lista y mostramos las cartas
             public void mostrarBaraja() {
             for (Carta carta : cartas) {
                 System.out.println(carta);
                 }
             }
-        
-        
-        
+
 }
